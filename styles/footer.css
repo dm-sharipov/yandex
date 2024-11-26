@@ -1,0 +1,22 @@
+/* Footer */
+
+.footer {
+    font-size: 16px;
+
+    color: var(--color-grey-49--60);
+    background-color: var(--color-pearl-bush);
+
+    padding-block-start: 40px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding-block-end: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding-block-end: 72px;
+    }
+}

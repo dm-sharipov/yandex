@@ -1,0 +1,57 @@
+/* Button */
+
+.button {
+    font-family: var(--font-family-text);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px;
+
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: background-color, border-color, color;
+    text-align: center;
+    text-decoration: none;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 66px;
+}
+
+.button--main {
+    color: var(--color-white);
+    border-color: var(--color-grey-31);
+    background-color: var(--color-grey-31);
+}
+
+.button--main:hover {
+    color: var(--color-grey-31);
+    border-color: var(--color-saffron-mango);
+    background-color: var(--color-saffron-mango);
+}
+
+.button--secondary {
+    color: var(--color-grey-31);
+    border-color: var(--color-grey-31);
+    background-color: transparent;
+}
+
+.button--secondary:hover {
+    color: var(--color-white);
+    border-color: var(--color-grey-31);
+    background-color: var(--color-grey-31);
+}
+
+.button:disabled {
+    cursor: not-allowed;
+
+    color: var(--color-text--secondary);
+    border-color: currentColor;
+    background-color: transparent;
+}

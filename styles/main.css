@@ -1,0 +1,41 @@
+/* Main */
+
+@media (max-width: 767px) {
+    .main__top-marquee {
+        margin-block-end: 48px;
+    }
+
+    .main__support {
+        margin-block-end: 121px;
+        scroll-margin-block-start: 30px;
+    }
+
+    .main__stages {
+        margin-block-end: 120px;
+        scroll-margin-block-start: 30px;
+    }
+
+    .main__participants {
+        margin-block-end: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main__top-marquee {
+        margin-block-end: 107px;
+    }
+
+    .main__support {
+        margin-block-end: 200px;
+        scroll-margin-block-start: 60px;
+    }
+
+    .main__stages {
+        margin-block-end: 200px;
+        scroll-margin-block-start: 60px;
+    }
+
+    .main__participants {
+        margin-block-end: 132px;
+    }
+}

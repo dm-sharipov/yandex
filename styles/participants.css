@@ -1,0 +1,63 @@
+/* Participants */
+
+@import "./person.css";
+
+.participants__container {
+    position: relative;
+}
+
+.participants__title {
+    margin-bottom: 60px;
+}
+
+.participants__card {
+    height: 100%;
+    padding-bottom: 8px;
+}
+
+.participants__buttons {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .participants__title {
+        margin-block-end: 40px;
+    }
+
+    .participants__slider-container {
+        margin-block-end: 33px;
+    }
+
+    .participants__buttons {
+        justify-content: center;
+
+        column-gap: 11px;
+    }
+}
+
+@media (min-width: 768px) {
+    .participants__title {
+        margin-block-end: 60px;
+        padding-inline-end: 180px;
+    }
+
+    .participants__buttons {
+        position: absolute;
+        top: 10px;
+
+        column-gap: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+    .participants__buttons {
+        right: 32px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .participants__buttons {
+        right: 72px;
+    }
+}

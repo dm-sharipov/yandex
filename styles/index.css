@@ -1,0 +1,58 @@
+@import "./fonts.css";
+
+@import "./visually-hidden.css";
+
+@import "./list-reset.css";
+
+@import "./container.css";
+
+@import "./button.css";
+
+@import "./title.css";
+
+@import "./slider.css";
+
+@import "./hero.css";
+
+@import "./marquee.css";
+
+@import "./support.css";
+
+@import "./stages.css";
+
+@import "./participants.css";
+
+@import "./header.css";
+
+@import "./main.css";
+
+@import "./footer.css";
+
+@import "./page.css";
+
+:root {
+    --color-azure: #3057a2;
+    --color-flamingo: #f54932;
+    --color-fuscous-gray: #424241;
+    --color-grey-208: #d0d0d0;
+    --color-grey-214: #d6d6d6;
+    --color-grey-217: #d9d9d9;
+    --color-grey-31: #1f1f1f;
+    --color-grey-49: #313131;
+    --color-grey-49--60: rgb(49 49 49 / 60%);
+    --color-grey-49--70: rgb(49 49 49 / 70%);
+    --color-pearl-bush: #e9ded4;
+    --color-saffron-mango: #fbce51;
+    --color-white: #ffffff;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:focus-visible {
+    outline: max(3px, 0.08em) solid var(--color-flamingo);
+    outline-offset: 2px;
+}

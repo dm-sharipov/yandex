@@ -1,0 +1,22 @@
+/* Header */
+
+.header__logo {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-block-start: 18px;
+    }
+
+    .header__logo {
+        width: auto;
+        height: 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding-block-start: 26px;
+    }
+}

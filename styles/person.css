@@ -1,0 +1,66 @@
+/* Person */
+
+.person {
+    text-align: center;
+}
+
+.person__photo {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 50%;
+    background-color: var(--color-fuscous-gray);
+
+    margin-block-end: 29px;
+    margin-inline: auto;
+}
+
+.person__name {
+    font-size: 24px;
+    font-weight: 600;
+
+    margin: 0;
+
+    margin-block-end: 6px;
+}
+
+.person__achievements {
+    margin: 0;
+
+    color: var(--color-grey-49--60);
+
+    margin-block-end: 20px;
+}
+
+.person__more {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 11px;
+
+    display: inline-block;
+
+    padding: 11px;
+
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: background-color, color;
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--color-azure);
+    border: 1px solid var(--color-azure);
+    border-radius: 62px;
+}
+
+.person__more:hover {
+    color: var(--color-white);
+    background-color: var(--color-azure);
+}
+
+@media (max-width: 767px) {
+    .person__photo {
+        width: 244px;
+    }
+}

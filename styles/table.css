@@ -1,0 +1,82 @@
+/* Table */
+
+.table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.table__cell {
+    font-size: 20px;
+
+    text-align: left;
+}
+
+th.table__cell {
+    font-weight: 400;
+
+    color: var(--color-grey-49--70);
+}
+
+td.table__cell {
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .table,
+    .table__body {
+        display: block;
+    }
+
+    .table__row {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    .table__row:not(:last-child) {
+        border-bottom: 2px solid var(--color-grey-208);
+
+        margin-block-end: 15px;
+        padding-block-end: 15px;
+    }
+
+    .table__cell {
+        display: block;
+
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .table__cell {
+        padding: 15px;
+
+        border: 2px solid var(--color-grey-208);
+    }
+
+    th.table__cell {
+        border-left: none;
+
+        padding-inline-start: 0;
+    }
+
+    td.table__cell {
+        border-right: none;
+
+        padding-inline-end: 0;
+    }
+
+    .table__row--first .table__cell {
+        border-top: none;
+
+        padding-block-start: 0;
+    }
+
+    .table__row--last .table__cell {
+        border-bottom: none;
+
+        padding-block-end: 0;
+    }
+}

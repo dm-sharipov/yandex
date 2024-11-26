@@ -1,0 +1,150 @@
+/* Stages */
+
+.stages__label {
+    margin: 0;
+
+    color: var(--color-azure);
+}
+
+.stages__slider {
+    counter-reset: stages;
+}
+
+.stages__card {
+    font-weight: 500;
+
+    display: flex;
+
+    counter-increment: stages;
+
+    column-gap: 16px;
+    padding-inline: 20px;
+}
+
+.stages__card::before {
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    content: counter(stages);
+}
+
+@media (max-width: 991px) {
+    .stages__header {
+        margin-block-end: 148px;
+    }
+
+    .stages__label {
+        font-size: 18px;
+
+        display: block;
+    }
+
+    .stages__title {
+        margin-block-end: 12px;
+    }
+
+    .stages__slider-container {
+        margin-block-end: 28px;
+    }
+
+    .stages__item {
+        background-color: var(--color-grey-217);
+
+        padding-block-end: 37px;
+        padding-block-start: 63px;
+    }
+
+    .stages__card {
+        font-size: 18px;
+    }
+
+    .stages__card:not(:last-child) {
+        margin-block-end: 28px;
+    }
+
+    .stages__card::before {
+        border-radius: 50%;
+        background-color: var(--color-white);
+    }
+
+    .stages__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        column-gap: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .stages__header {
+        max-width: 806px;
+
+        margin-block-end: 54px;
+    }
+
+    .stages__title {
+        display: inline;
+    }
+
+    .stages__label {
+        display: inline-block;
+
+        max-width: 280px;
+        padding-left: 15px;
+    }
+
+    .stages__slider-container {
+        display: grid;
+
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stages__item {
+        display: flex;
+
+        column-gap: 20px;
+    }
+
+    .stages__item--with-bg {
+        background-color: var(--color-grey-217);
+    }
+
+    .stages__item--with-bg .stages__card::before {
+        border-radius: 50%;
+        background-color: var(--color-white);
+    }
+
+    .stages__item:nth-child(1),
+    .stages__item:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .stages__item:nth-child(2) {
+        grid-row: span 2;
+    }
+
+    .stages__item:nth-child(5) {
+        grid-column: span 2;
+        padding-inline-end: 290px;
+    }
+
+    .stages__card {
+        flex-basis: 0;
+        flex-grow: 1;
+
+        padding-block: 20px;
+    }
+
+    .stages__buttons {
+        display: none;
+    }
+}

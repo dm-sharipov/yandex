@@ -1,0 +1,125 @@
+/* Support */
+
+@import "./table.css";
+
+.support__text {
+    font-family: var(--font-family-heading);
+
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.support__text mark {
+    font-weight: 700;
+
+    color: var(--color-flamingo);
+    background-color: transparent;
+}
+
+.support__image {
+    display: block;
+}
+
+.support__old-price {
+    margin-inline-end: 12px;
+    text-decoration-color: var(--color-flamingo);
+}
+
+.support__contact {
+    margin: 0;
+
+    color: var(--color-azure);
+}
+
+@media (max-width: 767px) {
+    .support__text {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .support__text--lecture {
+        margin-block-end: 20px;
+    }
+
+    .support__text--lecture span {
+        display: block;
+
+        margin-block-end: 261px;
+    }
+
+    .support__image {
+        width: 100vw;
+        max-width: 400px;
+        height: auto;
+
+        margin-block-end: 14px;
+        margin-inline: -20px;
+    }
+
+    .support__text--game {
+        margin-block-end: 45px;
+    }
+
+    .support__info {
+        margin-block-end: 40px;
+    }
+
+    .support__contact {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .support__text {
+        font-size: 36px;
+        line-height: 49px;
+    }
+
+    .support__text--lecture {
+        max-width: 764px;
+
+        margin-block-end: 44px;
+    }
+
+    .support__image {
+        float: left;
+
+        margin-inline-end: 17px;
+        margin-inline-start: -27px;
+    }
+
+    .support__text--game {
+        margin-block-end: 60px;
+        padding-block-start: 47px;
+    }
+
+    .support__info {
+        margin-block-end: 48px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+    .support__image {
+        width: 45%;
+        max-width: 529px;
+        height: auto;
+
+        margin-block-end: 14px;
+    }
+
+    .support__info {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1366px) {
+    .support__info {
+        width: auto;
+        min-width: 703px;
+    }
+
+    .support__info th {
+        width: 306px;
+    }
+}

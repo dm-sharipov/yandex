@@ -1,0 +1,51 @@
+/* Page */
+
+:root {
+    --color-bg-default: var(--color-white);
+    --color-bg-secondary: var(--color-pearl-bush);
+    --color-text-primary: var(--color-grey-49);
+    --font-family-heading: "Merriweather", sans-serif;
+    --font-family-text: "Golos Text", sans-serif;
+}
+
+.page {
+    min-width: 375px;
+    height: 100%;
+
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-default);
+
+    scroll-behavior: smooth;
+}
+
+.page__body {
+    font-family: var(--font-family-text);
+    font-size: 20px;
+    line-height: 1.2;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    margin: 0;
+}
+
+.page__header {
+    z-index: 10;
+}
+
+.page__main {
+    flex-grow: 1;
+}
+
+@media (max-width: 767px) {
+    .page__header {
+        margin-block-end: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .page__header {
+        margin-block-end: 62px;
+    }
+}
