@@ -2,7 +2,7 @@
 
 .hero {
     background-color: var(--color-bg-secondary);
-    background-image: url("/images/hero/bg.svg");
+    background-image: url("../images/hero/bg.svg");
     background-repeat: no-repeat;
 }
 
